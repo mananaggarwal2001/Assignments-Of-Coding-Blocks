@@ -4,3 +4,8 @@
 - [Mirror Star Pattern (Pattern 5)](mirror_star_pattern_5.java)
 - [Pattern Number Ladder](pattern_number_ladder.java)
 - [Hollow Rhombus Pattern](hollow_rhombus_pattern.java)
+- [Pattern Rhombus](Pattern_Rhombus.java)
+- [Pattern With Zeros](Pattern_Zero_Number.java)
+- [Fibonacci Pattern](Fibonacci_Pattern.java)
+- [Pattern Mountain](Pattern_Mountain.java)
+- [Pattern Magic](Pattern_Magic.java)

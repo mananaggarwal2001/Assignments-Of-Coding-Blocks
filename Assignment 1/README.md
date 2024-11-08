@@ -9,3 +9,6 @@
 - [Fibonacci Pattern](Fibonacci_Pattern.java)
 - [Pattern Mountain](Pattern_Mountain.java)
 - [Pattern Magic](Pattern_Magic.java)
+- [R4 Pattern](R4_Pattern.java)
+- [Pattern Double Sided Arrow](Pattern_Double_Sided_Arrow.java)
+- [Pascal Triangle (row and col should be start from 0)](Pascal_Triangle.java)

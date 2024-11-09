@@ -12,3 +12,7 @@
 - [R4 Pattern](R4_Pattern.java)
 - [Pattern Double Sided Arrow](Pattern_Double_Sided_Arrow.java)
 - [Pascal Triangle (row and col should be start from 0)](Pascal_Triangle.java)
+- [Pattern Inverted Hour Glass](Pattern_Inverted_Hour_Glass.java)
+- [Shopping Game](Shopping_Game.java)
+- [Check Prime](Check_Prime.java)
+- [Pattern Hour Glass](Pattern_Hour_Glass.java)

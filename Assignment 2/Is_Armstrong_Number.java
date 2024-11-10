@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Is_Armstrong_Number {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,7 +10,6 @@ public class Is_Armstrong_Number {
             System.out.println("false");
         }
     }
-
     public static boolean is_ArmStrong(long number) {
         int countDigits = String.valueOf(number).length();
         long sum = 0;

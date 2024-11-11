@@ -14,3 +14,8 @@
 13. [Bubble Sorting In The Array](Array_Bubble_Sort.java)
 14. [Maximum Sum Path In Two Arrays (To be Revised)](Maximum_Sum_Path_In_2_Arrays.java)
 15. [Array Selection Sort](Selection_Sort.java)
+16. [Array Insertion Sort](Insertion_Sort.java)
+17. [Maximum Circular Sum](Maximum_Circular_Sum.java)
+18. [Array to be sorted in linear time](Sorting_In_Linear_Time.java)
+19. [Product Of Array Except Self](Product_Of_Array_Except_Self.java)
+20. [Running Sum Of The Array](Running_Sum_Of_The_Array.java)

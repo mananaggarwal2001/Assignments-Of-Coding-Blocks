@@ -22,11 +22,15 @@ public class Form_Biggest_Number {
         for (int i = 0; i < numberArray.length; i++) {
             arrays[i] = String.valueOf(numberArray[i]);
         }
-        Arrays.sort(arrays);
+        Arrays.sort(arrays, (s1, s2) -> myCompare(s1, s2) ? -1 : 1);
         String formedString = "";
-        for (int i = arrays.length - 1; i >= 0; i--) {
+        for (int i = 0; i < arrays.length; i++) {
             formedString += arrays[i];
         }
         return formedString;
+    }
+
+    public static boolean myCompare(String s1, String s2) {
+        return (s1 + s2).compareTo(s2 + s1) > 0;
     }
 }

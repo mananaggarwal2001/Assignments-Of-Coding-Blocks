@@ -33,11 +33,11 @@ public class Boolean_Matrix {
         }
         for (Integer[] value : arrayList) {
             // for row
-            for (int i = 0; i < booleanArray.length; i++) {
+            for (int i = 0; i < booleanArray[0].length; i++) {
                 booleanArray[value[0]][i] = 1;
             }
             // for column we will use this approach.
-            for (int i = 0; i < booleanArray[0].length; i++) {
+            for (int i = 0; i < booleanArray.length; i++) {
                 booleanArray[i][value[1]] = 1;
             }
         }

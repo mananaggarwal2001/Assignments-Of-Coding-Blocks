@@ -1,0 +1,12 @@
+# Assignment 6
+1. [SubSet Problem Recursion](SubSet_Problem.java)
+2. [Recursion Twins](Recursion_Twins.java)
+3. [Maze Path Simple Problem](Maze_Path.java)
+4. [Maze Path Diagonal Problem](Maze_Path_Diagnoal.java)
+5. [Dictionary Order Larger](Dictionary_Order_Larger.java)
+6. [Board Path Count, Display](Board_Path.java)
+7. [Generate Paranthesis In Ascending Order](Generate_Paranthesis.java)
+8. [Dictionary Order Smaller](Dictionary_Order_Smaller.java)
+9. [Last Index](Last_Index.java)
+10. [Recursion Lexicographical Order](Recursion_Lexicographical_Order.java)
+11. [First Index Problem](First_Index.java)

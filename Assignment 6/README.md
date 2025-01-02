@@ -28,3 +28,6 @@
 27. [Incredible Hulk](IncredibleHulk.java)
 28. [Vivek Loves Array Game](Vivek_Loves_Array_Game.java)
 29. [Split Array Recursion](Split_Array_Recursion.java)
+30. [Count Set Bits](Count_Set_Bits.java)
+31. [Count Remove Replace Hi](Count_Remove_Replace_Hi.java)
+32. [Count Remove Replace Hi 2](Count_Remove_Replace_Hi_2.java)

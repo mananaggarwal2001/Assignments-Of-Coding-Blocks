@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Recursion_Convert_String_To_Integer {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         int sum = findSum(number);

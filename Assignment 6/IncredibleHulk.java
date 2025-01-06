@@ -1,28 +1,31 @@
 import java.util.Scanner;
 
 public class IncredibleHulk {
-    static int result = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         while (number > 0) {
             int steps = sc.nextInt();
-            calculateSteps(steps, 0);
+            int result = calculateSteps(steps);
             System.out.println(result);
-            result = Integer.MAX_VALUE;
             number--;
         }
     }
 
 
-    private static void calculateSteps(int number, int steps) {
-        if (number == 0) {
-            result = Math.min(result, steps);
-            return;
+    private static int calculateSteps(int steps) {
+        int count = 0;
+        int k = 1;
+        while (steps != 0) {
+            while (k <= steps) {
+                k <<= 1;
+            }
+            k >>= 1;
+            steps -= k;
+            k = 1;
+            count++;
         }
-        for (int i = 0; i <= number; i++) {
-            calculateSteps((int) (number - Math.pow(2, i)), steps + 1);
-        }
+        return count;
     }
 }

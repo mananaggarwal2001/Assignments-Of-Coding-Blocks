@@ -7,15 +7,6 @@ public class Vivek_Loves_Array_Game {
         while (testCases > 0) {
             int size = sc.nextInt();
             int[] numberArray = new int[size];
-            int sum = 0;
-            for (int i = 0; i < numberArray.length; i++) {
-                numberArray[i] = sc.nextInt();
-                sum += numberArray[i];
-            }
-            if (sum % 2 != 0) {
-                System.out.println(0);
-                return;
-            }
             int result = checkMaxNumber(numberArray, 0, numberArray.length - 1, 0);
             System.out.println(result);
             testCases--;
@@ -25,7 +16,8 @@ public class Vivek_Loves_Array_Game {
     private static int checkMaxNumber(int[] numberArray, int si, int ei, int index) {
         // target 1 is getting the sum of the array.
         // base case 1.
-        if (index >= numberArray.length) {
+        if (si > ei || index>=numberArray.length) {
+
             return 0;
         }
         int sum1 = getSum(numberArray, si, index);

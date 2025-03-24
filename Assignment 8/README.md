@@ -6,3 +6,7 @@
 - [Level Order Zig Zag Printing](Level_Order_Zig_Zag.java)
 - [Right Side View Of Binary Tree](Right_Side_View.java)
 - [Left Side View Of Binary Tree](Left_Side_View_Binary_Tree.java)
+- [Structurally Identical Binary Tree](Structually_Identical_Binary_Tree.java)
+- [Is Balanced Binary Tree Or Not](Is_Balanced.java)
+- [Print Value Of Those Nodes Who Don't have a sibling](Sibling_Nodes_Dont_Have.java)
+- [Replace Sum With Greater Node](Replace_Sum_Greater_Node.java)

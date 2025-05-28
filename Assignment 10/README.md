@@ -22,3 +22,5 @@
 21. [Tiling Problem 1](Tiling_Problem_1.java)
 22. [Optimal Game Strategy](Pyush_Nimit_Game.java)
 23. [Rod Cutting Problem](Rod_Cutting_Problem.java)
+24. [House Robber 2](House_Robber_2.java)
+25. [Longest Increasing Subsequence](Longest_Common_Subseqeuence.java)

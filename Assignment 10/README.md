@@ -1,6 +1,6 @@
 # Assignment 10
 1. [0-N Knapsack](Zero_N_Knapsack.java)
-2. [Count Number Of Binary Strings](Count_Number_Binary_Strings.java)
+2. [Count Number Of Distinct without having consecutive 1's in the Strings](Count_Number_Binary_Strings.java)
 3. [Coin Change](Coin_Change.java)
 4. [Board Path Count Print](Board_Path_Count_Print.java)
 5. [0/1 KnapSack](Zero_1_Knapsack.java)
@@ -24,3 +24,4 @@
 23. [Rod Cutting Problem](Rod_Cutting_Problem.java)
 24. [House Robber 2](House_Robber_2.java)
 25. [Longest Increasing Subsequence](Longest_Common_Subseqeuence.java)
+26. [Plate Dropping Problem](Plate_Dropping.java)

@@ -1,57 +1,28 @@
 import java.util.Scanner;
 
-// this question is for backtracking.
 public class Split_Array_Recursion {
-    static int count = 0;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
-        int[] arr = new int[number];
-        boolean[] isPicked = new boolean[number];
-        int sum = 0;
+        int n = sc.nextInt();
+        int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
-            sum += arr[i];
         }
-        if (sum % 2 != 0) {
-            System.out.println(0);
-            return;
-        }
-        sum /= 2;
-        permuteArray(arr, sum, isPicked, 0);
-        System.out.println(count);
-        count = 0;
+        int result = split_Array(arr, 0, 0, "", 0, "");
+        System.out.println(result);
     }
 
-    private static void permuteArray(int[] arr, int sum, boolean[] isPicked, int index) {
-        if (index == arr.length) {
-            int splitSum = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (isPicked[i]) {
-                    splitSum += arr[i];
-                }
+    public static int split_Array(int[] arr, int idx, int sum1, String ans1, int sum2, String ans2) {
+        if (idx == arr.length) {
+            if (sum1 == sum2) {
+                System.out.println(ans1 + "and " + ans2);
+                return 1;
+            } else {
+                return 0;
             }
-            if (splitSum == sum) {
-                for (int i = 0; i < arr.length; i++) {
-                    if (isPicked[i]) {
-                        System.out.print(arr[i] + " ");
-                    }
-                }
-                System.out.print("and ");
-                for (int i = 0; i < arr.length; i++) {
-                    if (!isPicked[i]) {
-                        System.out.print(arr[i] + " ");
-                    }
-                }
-                count++;
-                System.out.println();
-            }
-            return;
         }
-        isPicked[index] = true;
-        permuteArray(arr, sum, isPicked, index + 1);
-        isPicked[index] = false;
-        permuteArray(arr, sum, isPicked, index + 1);
+        int result1 = split_Array(arr, idx + 1, sum1 + arr[idx], ans1 + arr[idx] + " ", sum2, ans2);
+        int result2 = split_Array(arr, idx + 1, sum1, ans1, sum2 + arr[idx], ans2 + arr[idx] + " ");
+        return result2 + result1;
     }
 }

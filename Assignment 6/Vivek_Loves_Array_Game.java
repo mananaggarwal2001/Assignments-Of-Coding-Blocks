@@ -3,41 +3,37 @@ import java.util.Scanner;
 public class Vivek_Loves_Array_Game {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int testCases = sc.nextInt();
-        while (testCases > 0) {
+        int testcase = sc.nextInt();
+        while (testcase-- > 0) {
             int size = sc.nextInt();
-            int[] numberArray = new int[size];
-            int result = checkMaxNumber(numberArray, 0, numberArray.length - 1, 0);
+            int[] arr = new int[size];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = sc.nextInt();
+            }
+            int result = vivek_Loves_Game(arr, 0, arr.length - 1);
             System.out.println(result);
-            testCases--;
         }
     }
 
-    private static int checkMaxNumber(int[] numberArray, int si, int ei, int index) {
-        // target 1 is getting the sum of the array.
-        // base case 1.
-        if (si > ei || index>=numberArray.length) {
-
+    public static int vivek_Loves_Game(int[] arr, int si, int ei) {
+        if (si > ei) {
             return 0;
         }
-        int sum1 = getSum(numberArray, si, index);
-        int sum2 = getSum(numberArray, index + 1, ei);
-        int result = 0;
-        if (sum1 == sum2) {
-            int count1 = 1 + checkMaxNumber(numberArray, si, index, index + 1);
-            int count2 = 1 + checkMaxNumber(numberArray, index + 1, ei, index + 1);
-            result += Math.max(count1, count2);
-        } else {
-            return checkMaxNumber(numberArray, si, ei, index + 1);
+        for (int mid = si; mid < ei; mid++) {
+            int sum1 = 0;
+            for (int i = si; i <= mid; i++) {
+                sum1 += arr[i];
+            }
+            int sum2 = 0;
+            for (int i = mid + 1; i <= ei; i++) {
+                sum2 += arr[i];
+            }
+            if (sum1 == sum2) {
+                int left = vivek_Loves_Game(arr, si, mid);
+                int right = vivek_Loves_Game(arr, mid + 1, ei);
+                return Math.max(left, right) + 1;
+            }
         }
-        return result;
-    }
-
-    private static int getSum(int[] numberArray, int si, int ei) {
-        int sum = 0;
-        for (int i = si; i <= ei; i++) {
-            sum += numberArray[i];
-        }
-        return sum;
+        return 0;
     }
 }
